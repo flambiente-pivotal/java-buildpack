@@ -127,7 +127,7 @@ module JavaBuildpack
       if system("git --git-dir=#{GIT_DIR} status 2>/dev/null 1>/dev/null")
         remote_url = diagnose_remotes
         head_commit_sha = diagnose_head_commit
-        puts "-----> Java Buildpack source: #{remote_url}##{head_commit_sha}" if print
+        puts "-----> Filippo Java Buildpack source: #{remote_url}##{head_commit_sha}" if print
       else
         @logger.debug { DEFAULT_BUILDPACK_MESSAGE }
         puts DEFAULT_BUILDPACK_MESSAGE if print
