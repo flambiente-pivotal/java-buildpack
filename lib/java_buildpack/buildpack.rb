@@ -122,6 +122,8 @@ module JavaBuildpack
     def component_detection(components)
       components.select { |component| component.detect }
     end
+    
+    puts "-----> Filippo test" print
 
     def diagnose_git_info(print)
       if system("git --git-dir=#{GIT_DIR} status 2>/dev/null 1>/dev/null")
