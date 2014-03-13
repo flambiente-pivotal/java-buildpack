@@ -126,6 +126,9 @@ module JavaBuildpack
     puts "-----> Filippo test" print
 
     def diagnose_git_info(print)
+      
+          puts "-----> Filippo Java Buildpack test" print
+      
       if system("git --git-dir=#{GIT_DIR} status 2>/dev/null 1>/dev/null")
         remote_url = diagnose_remotes
         head_commit_sha = diagnose_head_commit
